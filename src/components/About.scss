@@ -1,0 +1,52 @@
+@use '../css/variable' as v;
+
+.about__container {
+
+    .about__detail {
+        display: flex;
+        gap: 3rem;
+
+        .about__right {
+            p {
+                margin-bottom: 1.4rem;
+                font-size: 1.4rem;
+                color: v.$text-color-dark;
+            }
+
+            .about__list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 2.8rem;
+
+                .about__item {
+                    margin-bottom: 0.8rem;
+                    color: v.$text-color-dark;
+                    font-size: 1.4rem;
+
+                    &:hover {
+                        color: v.$green-color;
+                    }
+                }
+            }
+        }
+
+        .about__left {
+            
+            img {
+                position: relative;
+                border-radius: 0.8rem;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 200px;
+                    left: 200px;
+                    border: 1px solid v.$green-color;
+                }
+            }
+        }
+    }
+}

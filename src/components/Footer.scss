@@ -1,0 +1,15 @@
+@use '../css/variable' as v;
+
+.footer {
+    padding-bottom: 3.2rem;
+
+    .footer__container {
+        display: flex;
+    
+        .footer__content {
+            margin: 0 auto;
+            color: v.$text-color-dark;
+            font-size: 1.2rem;
+        }
+    }
+}

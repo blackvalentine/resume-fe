@@ -1,0 +1,123 @@
+@use '../../css/variable' as v;
+
+.blog-page {
+    background-color: black;
+    .container__blog-page {
+        .blog-page__intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5rem;
+            margin: 10rem 0;
+
+            .blog-page__intro-title {
+                flex: 1;
+                font-size: 4rem;
+
+                span {
+                    color: v.$green-color;
+                }
+            }
+
+            .blog-page__intro-subtitle {
+                flex: 1;
+                font-size: 1.4rem;
+                color: v.$text-color;
+                line-height: 2.2rem;
+            }
+        }
+
+        .blog-page__filter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+
+            .blog-page__filter-title {
+                font-size: 1.4rem;
+            }
+
+            .blog-page__filter-list {
+                display: flex;
+                align-items: center;
+
+                .blog-page__filter-item {
+                    font-size: 1.4rem;
+                    cursor: pointer;
+
+                    &.active-filter {
+                        color: v.$green-color;
+                    }
+                }
+
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .blog-page__post-list {
+            .blog-page__post-item {
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                align-items: flex-end;
+                margin-bottom: 10rem;
+            
+                .post-item__image {
+                    padding-top: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 2rem;
+                }
+
+                .post-item__content {
+                    .post-item__content-title {
+                        margin-bottom: 1.6rem;
+                        font-size: 3.6rem;
+                        color: white;
+                    }
+
+                    .post-item__content-subtitle {
+                        color: v.$text-color-dark;
+                        font-size: 1.6rem;
+                        margin-left: 3rem;
+                    }
+
+                    .post-item__content-button {
+                        padding: 1.6rem 2.5rem;
+                        border: 1px solid v.$green-color;
+                        margin-top: 4rem;
+                        color: v.$green-color;
+                        background-color: transparent;
+                        font-size: 1.6rem;
+                        border-radius: 0.6rem;
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .post-item__image {
+                        grid-column: 1 / 7;
+                    }
+
+                    .post-item__content {
+                        grid-column: 8 / 13;
+                    }
+                }
+
+                &:nth-child(even) {
+                    .post-item__image {
+                        grid-column: 7 / 13;
+                    }
+
+                    .post-item__content {
+                        position: relative;
+                        grid-area: 1 / 1 / -1 / 7;
+                        grid-column: 1 / 6;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use '../css/variable' as v;
+
+.contact {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .contact__title {
+            font-size: 4rem;
+        }
+    
+        .contact__subtitle {
+            font-size: 1.4rem;
+            color: v.$text-color-dark;
+            text-align: center;
+        }
+
+        .contact__button {
+            padding: 1.6rem 2.5rem;
+            border: 1px solid v.$green-color;
+            margin-top: 4rem;
+            color: v.$green-color;
+            background-color: transparent;
+            font-size: 1.6rem;
+            border-radius: 0.6rem;
+        }
+    }
+}

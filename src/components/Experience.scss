@@ -1,0 +1,65 @@
+@use '../css/variable' as v;
+
+.experience__container {
+  margin: 0 auto;
+  max-width: 765px;
+  min-height: 350px;
+
+  .experience__content {
+    display: flex;
+
+    .experience__left {
+      .experience__company {
+        padding: 1rem 2rem;
+        color: v.$text-color-dark;
+        cursor: pointer;
+        font-size: 1.4rem;
+        border-left: 1px solid v.$text-color-dark;
+        width: 200px;
+
+        &.active__company {
+          color: v.$green-color;
+          border-left: 1px solid v.$green-color;
+        }
+
+        &:hover {
+          background-color: #112240;
+          color: v.$green-color;
+        }
+      }
+    }
+
+    .experience__right {
+      margin-left: 2rem;
+
+      .experience__detail {
+        display: none;
+        padding: 0.8rem;
+
+        &.active__detail {
+          display: block;
+        }
+
+        .experience__detail-position {
+          font-size: 2rem;
+          margin-bottom: 0.4rem;
+
+          span {
+            margin: 0 1.4rem;
+            color: v.$green-color;
+          }
+
+          a {
+            color: v.$green-color;
+          }
+        }
+
+        p {
+          font-size: 1.4rem;
+          color: v.$text-color-dark;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}

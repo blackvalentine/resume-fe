@@ -1,0 +1,118 @@
+@use '../css/variable' as v;
+
+.project__container {
+    .project__list {
+        .project__item {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+            margin-bottom: 15rem;
+
+            &:nth-child(odd) {
+                .project__item-image {
+                    position: relative;
+                    grid-area: 1 / 6 / -1 / -1;
+                    grid-column: 1 / 8;
+                }
+
+                .project__item-content {
+                    position: relative;
+                    grid-area: 1 / 1 / -1 / 7;
+                    grid-column: 7 / -1;
+                    text-align: right;
+
+                    .project__item-tech-list {
+                        justify-content: flex-end;
+
+                        .project__item-tech-item {
+                            margin-left: 1.6rem;
+                        }
+                    }
+                }
+
+                .project__item-link {
+                    justify-content: flex-end;
+    
+                    .project__item-link-item {
+                        margin-left: 1rem;
+                    }
+                    
+                }
+            }
+
+            &:nth-child(even) {
+                .project__item-image {
+                    position: relative;
+                    grid-area: 1 / 6 / -1 / -1;
+                    grid-column: 6 / -1;
+                }
+
+                .project__item-content {
+                    position: relative;
+                    grid-area: 1 / 1 / -1 / 7;
+                    grid-column: 1 / 7;
+                    text-align: left;
+
+                    .project__item-tech-list {
+                        justify-content: flex-start;
+
+                        .project__item-tech-item {
+                            margin-right: 1.6rem;
+                        }
+                    }
+                }
+
+                .project__item-link {
+                    justify-content: flex-start;
+    
+                    .project__item-link-item {
+                        margin-right: 1rem;
+                    }
+                    
+                }
+            }
+
+            .project__item-title {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+                color: v.$text-color;
+            }
+            
+            .project__item-detail {
+                padding: 2rem;
+                background-color: v.$blue-color-dark;
+                margin-bottom: 1.5rem;
+
+                &-text {
+                    color: v.$text-color-dark;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .project__item-tech-list {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                color: v.$text-color-dark;
+
+                .project__item-tech-item {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .project__item-link {
+                display: flex;
+                align-items: center;
+
+                .project__item-link-item {
+                    svg {
+                        width: 2rem;
+                        color: v.$text-color-dark;
+                    }
+                }
+                
+            }
+        }
+    }
+}

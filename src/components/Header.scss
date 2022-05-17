@@ -1,0 +1,50 @@
+@use '../css/variable' as v;
+
+/* =============== Header =============== */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+
+  .nav__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__list {
+    display: flex;
+    margin-right: 2rem;
+
+    .nav__item {
+      padding: 1.2rem;
+
+      span:first-child {
+        margin-right: 0.4rem;
+        color: v.$green-color;
+        font-size: 1.4rem;
+      }
+
+      span:last-child {
+        color: v.$text-color;
+        font-size: 1.4rem;
+
+        &:hover {
+          color: v.$green-color;
+        }
+      }
+    }
+  }
+
+  .nav__image {
+    width: 80px;
+  }
+
+  .nav_resume {
+    padding: 1rem 2rem;
+    border: 1px solid v.$green-color;
+    color: v.$green-color;
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+  }
+}
