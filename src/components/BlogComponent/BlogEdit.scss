@@ -1,57 +1,63 @@
 @use '../../css/variable' as v;
 .blog-edit {
-    background-color: black;
-    min-height: 100vh;
+  background-color: black;
+  min-height: 100vh;
 
-    .blog-edit__input-title {
-        width: 600px;
-        margin: 0 2rem 2rem;
-        padding: 1rem;
-        font-size: 1.6rem;
+  .blog-edit__input-title {
+    width: 600px;
+    margin: 0 2rem 2rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .blog-edit__markdown {
+    margin: 0 2rem;
+  }
+
+  .blog-edit__add-img {
+    margin: 0 2rem 2rem;
+
+    .add-img__btn {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 1rem 2rem;
+      width: 300px;
+      height: 300px;
+      background-color: transparent;
+      border-radius: 0.4rem;
+      color: v.$green-color;
+      font-size: 1.6rem;
+      border: 1px solid v.$green-color;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
     }
 
-    .blog-edit__markdown {
-        margin: 0 2rem;
+    .blog-edit__preview-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 300px;
+      height: 300px;
+      border: 1px solid red;
     }
+  }
 
-    .blog-edit__add-img {
-        margin: 0 2rem 2rem;
+  .blog-edit__input-subtitle {
+    height: 300px;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
 
-        .add-img__btn {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            padding: 1rem 2rem;
-            width: 300px;
-            height: 300px;
-            background-color: transparent;
-            border-radius: 0.4rem;
-            color: v.$green-color;
-            font-size: 1.6rem;
-            border: 1px solid v.$green-color;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            cursor: pointer;
-        }
-
-        .blog-edit__preview-img {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 300px;
-            height: 300px;
-            border: 1px solid red;
-        }
-    }
-
-    .blog-edit__confirm {
-        padding: 2rem;
-        margin: 2rem;
-        background-color: transparent;
-        border-radius: 0.4rem;
-        color: v.$green-color;
-        font-size: 1.6rem;
-        border: 1px solid v.$green-color;
-    }
+  .blog-edit__confirm {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: transparent;
+    border-radius: 0.4rem;
+    color: v.$green-color;
+    font-size: 1.6rem;
+    border: 1px solid v.$green-color;
+  }
 }

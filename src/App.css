@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 * {
   box-sizing: inherit;
@@ -12,7 +12,9 @@ html {
   font-size: 62.5%;
 }
 
-h1,h2,p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -34,7 +36,6 @@ button {
   cursor: pointer;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -55,6 +56,7 @@ body {
 
 .container {
   max-width: 976px;
+  padding: 0 5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -64,7 +66,7 @@ body {
 }
 
 .section-component {
-  padding-bottom: 20rem;
+  padding: 12rem 0 8rem;
 }
 
 .my-resume {
@@ -78,11 +80,34 @@ body {
 
 .title__number {
   font-size: 1.6rem;
-  color: #64FFDA;
+  color: #64ffda;
 }
 
 .title__text {
   margin-left: 0.8rem;
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+.space-header {
+  padding-top: 12.3rem;
+}
+
+.active-filter-option {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    margin: 0 10rem;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 0 3.6rem;
+  }
 }

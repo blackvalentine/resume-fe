@@ -1,4 +1,5 @@
 @use '../css/variable' as v;
+@use '../mixins/mixin';
 
 .experience__container {
   margin: 0 auto;
@@ -16,6 +17,10 @@
         font-size: 1.4rem;
         border-left: 1px solid v.$text-color-dark;
         width: 200px;
+
+        @include mixin.tablet {
+          width: 100px;
+        }
 
         &.active__company {
           color: v.$green-color;
@@ -58,6 +63,10 @@
           font-size: 1.4rem;
           color: v.$text-color-dark;
           margin-bottom: 1.5rem;
+
+          @include mixin.tablet {
+            font-size: 1.2rem;
+          }
         }
       }
     }

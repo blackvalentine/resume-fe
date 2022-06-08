@@ -47,7 +47,7 @@ function About(props) {
                 <span>NextJs</span>
               </li>
               <li className="about__item">
-                <span>ASP.NET</span>
+                <span>TailwindCss</span>
               </li>
             </ul>
           </div>

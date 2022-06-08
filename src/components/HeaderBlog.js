@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import userApi from '../api/userApi'
 import { useNavigate } from 'react-router-dom'
 
-function Header(props) {
+function HeaderBlog(props) {
 
   const navigate = useNavigate()
 
@@ -65,34 +65,9 @@ function Header(props) {
 
         <div className={toggleMenu ? "nav__menu menu__show" : "nav__menu"}>
           <ul className="nav__list">
-            <li className="nav__item" onClick={handleToggleMenu}>
-              <a href="#about" className="nav__link">
-                <span>01.</span>
-                <span>About</span>
-              </a>
-            </li>
-            <li className="nav__item" onClick={handleToggleMenu}>
-              <a href="#experience" className="nav__link">
-                <span>02.</span>
-                <span>Experience</span>
-              </a>
-            </li>
-            <li className="nav__item" onClick={handleToggleMenu}>
-              <a href="#project" className="nav__link">
-                <span>03.</span>
-                <span>Project</span>
-              </a>
-            </li>
-            <li className="nav__item" onClick={handleToggleMenu}>
-              <a href="#contact" className="nav__link">
-                <span>04.</span>
-                <span>Contact</span>
-              </a>
-            </li>
-            <li className="nav__item" onClick={handleToggleMenu}>
-              <Link to="/blogs" className="nav__link">
-                <span>05.</span>
-                <span>Blog</span>
+            <li className="nav__item">
+              <Link to="/" className="nav__link">
+                <span>Back to Homepage</span>
               </Link>
             </li>
           </ul>
@@ -107,4 +82,4 @@ function Header(props) {
   )
 }
 
-export default Header
+export default HeaderBlog;

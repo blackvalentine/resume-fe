@@ -76,7 +76,7 @@ function Experience(props) {
                 <h3 className="experience__detail-position">
                   Intern Research Enginner
                   <span>@</span>
-                  <a href="https://www.hust.edu.vn/">HUST Lab</a>
+                  <a href="https://www.hust.edu.vn/">HUST Laboratory</a>
                 </h3>
                 <p className="experience__detail-time">May 2014 - June 2018</p>
                 <p className="experience__detail-description">Write modern, performant, maintainable code for a diverse array of client and internal projects</p>

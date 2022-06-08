@@ -1,123 +1,275 @@
 @use '../../css/variable' as v;
+@use '../../mixins/mixin';
 
 .blog-page {
-    background-color: black;
-    .container__blog-page {
-        .blog-page__intro {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 5rem;
-            margin: 10rem 0;
+  background-color: black;
 
-            .blog-page__intro-title {
-                flex: 1;
-                font-size: 4rem;
+  .container__blog-page {
+    padding-top: 12.3rem;
 
-                span {
-                    color: v.$green-color;
-                }
-            }
-
-            .blog-page__intro-subtitle {
-                flex: 1;
-                font-size: 1.4rem;
-                color: v.$text-color;
-                line-height: 2.2rem;
-            }
-        }
-
-        .blog-page__filter {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 2rem;
-
-            .blog-page__filter-title {
-                font-size: 1.4rem;
-            }
-
-            .blog-page__filter-list {
-                display: flex;
-                align-items: center;
-
-                .blog-page__filter-item {
-                    font-size: 1.4rem;
-                    cursor: pointer;
-
-                    &.active-filter {
-                        color: v.$green-color;
-                    }
-                }
-
-                span {
-                    font-size: 1.4rem;
-                }
-            }
-        }
-
-        .blog-page__post-list {
-            .blog-page__post-item {
-                position: relative;
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                align-items: flex-end;
-                margin-bottom: 10rem;
-            
-                .post-item__image {
-                    padding-top: 100%;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    border-radius: 2rem;
-                }
-
-                .post-item__content {
-                    .post-item__content-title {
-                        margin-bottom: 1.6rem;
-                        font-size: 3.6rem;
-                        color: white;
-                    }
-
-                    .post-item__content-subtitle {
-                        color: v.$text-color-dark;
-                        font-size: 1.6rem;
-                        margin-left: 3rem;
-                    }
-
-                    .post-item__content-button {
-                        padding: 1.6rem 2.5rem;
-                        border: 1px solid v.$green-color;
-                        margin-top: 4rem;
-                        color: v.$green-color;
-                        background-color: transparent;
-                        font-size: 1.6rem;
-                        border-radius: 0.6rem;
-                    }
-                }
-
-                &:nth-child(odd) {
-                    .post-item__image {
-                        grid-column: 1 / 7;
-                    }
-
-                    .post-item__content {
-                        grid-column: 8 / 13;
-                    }
-                }
-
-                &:nth-child(even) {
-                    .post-item__image {
-                        grid-column: 7 / 13;
-                    }
-
-                    .post-item__content {
-                        position: relative;
-                        grid-area: 1 / 1 / -1 / 7;
-                        grid-column: 1 / 6;
-                    }
-                }
-            }
-        }
+    @include mixin.desktop {
+      margin: 0 3.6rem;
     }
+
+    .blog-page__intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5rem;
+      margin: 10rem 0;
+
+      @include mixin.tablet {
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .blog-page__intro-title {
+        flex: 1;
+        font-size: 4rem;
+
+        @include mixin.tablet {
+          font-size: 3rem;
+          text-align: center;
+        }
+
+        span {
+          color: v.$green-color;
+        }
+      }
+
+      .blog-page__intro-subtitle {
+        flex: 1;
+        font-size: 1.4rem;
+        color: v.$text-color;
+        line-height: 2.2rem;
+
+        @include mixin.tablet {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .blog-page__filter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      .blog-page__filter-title {
+        font-size: 1.4rem;
+      }
+
+      .blog-page__filter-list {
+        display: flex;
+        align-items: center;
+
+        @include mixin.tablet {
+          display: none;
+        }
+
+        .blog-page__filter-item {
+          font-size: 1.4rem;
+          cursor: pointer;
+
+          &:hover {
+            color: v.$green-color;
+          }
+
+          &.active-filter {
+            color: v.$green-color;
+          }
+        }
+
+        span {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .blog-page__filter-selector {
+      display: none;
+      position: relative;
+      width: 150px;
+      height: 30px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border: 2px solid v.$green-color;
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        right: 8px;
+        top: 6px;
+        transform: rotate(-45deg);
+        z-index: 10000;
+        transition: 0.5s;
+        pointer-events: none;
+      }
+
+      &.active-filter::before {
+        top: 12px;
+        transform: rotate(-225deg)
+      }
+
+      @include mixin.tablet {
+        display: block;
+      }
+
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0.4rem;
+        border: 1px solid v.$green-color;
+        background-color: transparent;
+        border-radius: 0.4rem;
+        color: v.$green-color;
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+
+      &-option {
+        position: absolute;
+        top: 35px;
+        width: 100%;
+        padding: 0.4rem;
+        border: 1px solid v.$green-color;
+        border-radius: 0.4rem;
+        font-size: 1.4rem;
+        z-index: 100;
+
+        div {
+          cursor: pointer;
+
+          :hover {
+            color: v.$green-color;
+          }
+        }
+      }
+    }
+
+    .blog-page__post-list {
+      .blog-page__post-item {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: flex-end;
+        margin-bottom: 10rem;
+
+        @include mixin.tablet {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .post-item__image {
+          padding-top: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          border-radius: 2rem;
+
+          @include mixin.desktop {
+            padding-top: 200%;
+          }
+
+          @include mixin.tablet {
+            padding-top: 50%;
+            margin-bottom: 3rem;
+            width: 100%;
+          }
+        }
+
+        .post-item__content {
+          .post-item__content-title {
+            margin-bottom: 1.6rem;
+            font-size: 3.6rem;
+            color: white;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+
+            @include mixin.tablet {
+              text-align: center;
+            }
+          }
+
+          .post-item__content-subtitle {
+            color: v.$text-color-dark;
+            font-size: 1.6rem;
+            margin-left: 3rem;
+
+            @include mixin.tablet {
+              margin: 0;
+            }
+          }
+
+          .post-item__content-list-button {
+            display: flex;
+            justify-content: flex-end;
+
+            .post-item__content-button {
+              padding: 1.6rem 2.5rem;
+              border: 1px solid v.$green-color;
+              margin-right: 1rem;
+              color: v.$green-color;
+              background-color: transparent;
+              font-size: 1.6rem;
+              border-radius: 0.6rem;
+
+              @include mixin.tablet {
+                margin-right: 0;
+                margin-left: 1rem;
+              }
+            }
+          }
+
+          .post-item__content-button {
+            padding: 1.6rem 2.5rem;
+            border: 1px solid v.$green-color;
+            margin-top: 4rem;
+            margin-right: 1rem;
+            color: v.$green-color;
+            background-color: transparent;
+            font-size: 1.6rem;
+            border-radius: 0.6rem;
+          }
+        }
+
+        &:nth-child(odd) {
+          .post-item__image {
+            grid-column: 1 / 7;
+
+            @include mixin.desktop {
+              grid-column: 1/6;
+            }
+          }
+
+          .post-item__content {
+            grid-column: 8 / 13;
+
+            @include mixin.desktop {
+              grid-column: 7/13;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          .post-item__image {
+            grid-column: 7 / 13;
+          }
+
+          .post-item__content {
+            position: relative;
+            grid-area: 1 / 1 / -1 / 7;
+            grid-column: 1 / 6;
+          }
+        }
+      }
+    }
+  }
 }

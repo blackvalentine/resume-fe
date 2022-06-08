@@ -11,7 +11,7 @@ function Contact(props) {
                 </div>
                 <h3 className="contact__title">Get In Touch</h3>
                 <p className="contact__subtitle">Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                <button className="contact__button">Say Hello</button>
+                <a className="contact__button" href="mailto:tuanson.dang1404@gmail.com">Say Hello</a>
             </div>
         </div>
     );

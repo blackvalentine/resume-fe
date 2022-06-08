@@ -1,0 +1,119 @@
+@use '../../css/variable' as v;
+@use '../../mixins/mixin';
+
+.blog-detail {
+  background-color: black;
+
+  .blog-detail__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .blog-detail__title {
+      padding-top: 12.3rem;
+      margin: 3rem auto 0;
+      text-align: center;
+      font-size: 4rem;
+
+      @include mixin.tablet {
+        margin: 2.4rem auto 0;
+        font-size: 3.2rem;
+      }
+
+      @include mixin.mobile {
+        margin: 1.6rem auto 0;
+        font-szie: 2.8rem;
+      }
+    }
+
+    .blog-detail__author-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 2rem 0;
+
+      @include mixin.tablet {
+        width: 80px;
+        height: 80px;
+      }
+
+      @include mixin.mobile {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .blog-detail__info {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+
+      @include mixin.tablet {
+        font-size: 1.4rem;
+      }
+
+      @include mixin.mobile {
+        font-size: 1.2rem;
+      }
+    }
+
+    .blog-detail__subtitle {
+      font-size: 1.6rem;
+      color: v.$text-color-dark;
+      margin: 2rem 0;
+
+      @include mixin.tablet {
+        font-size: 1.4rem;
+      }
+
+      @include mixin.mobile {
+        font-size: 1.2rem;
+      }
+    }
+
+    .blog-detail__image {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 50%;
+      width: 100%;
+      margin-bottom: 4rem;
+      border-radius: 1rem;
+    }
+
+    .blog-detail__content {
+      margin: 0 0 5rem;
+
+      p {
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
+
+        @include mixin.tablet {
+          margin-bottom: 1rem;
+          font-size: 1.4rem;
+        }
+
+        @include mixin.mobile {
+          margin-bottom: 0.8rem;
+          font-size: 1.2rem;
+        }
+      }
+
+      h2 {
+        margin-top: 4rem;
+        margin-bottom: 1.6rem;
+        font-size: 2.4rem;
+        color: v.$green-color;
+
+        @include mixin.tablet {
+          margin-bottom: 1rem;
+          font-size: 2rem;
+        }
+
+        @include mixin.mobile {
+          margin-bottom: 0.8rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
