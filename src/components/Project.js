@@ -1,5 +1,8 @@
 import React from 'react';
 import './Project.scss'
+import blava from '../assets/images/blava.png'
+import skillrank from '../assets/images/skillrank.png'
+import casepage from '../assets/images/case.png'
 
 function Project(props) {
   return (
@@ -13,7 +16,7 @@ function Project(props) {
         <ul className="project__list">
           <li className="project__item">
             <div className="project__item-image">
-              <img src="https://raw.githubusercontent.com/BlackValentine/image-storage/main/Screen%20Shot%202022-06-01%20at%2017.23.57.png?token=GHSAT0AAAAAABVNGYMV2VEKK4INNC4M2JVEYVCUZZA" alt="Skillrank_image" />
+              <img src={skillrank} alt="Skillrank_image" />
             </div>
             <div className="project__item-content">
               <h2 className="project__item-title">Skillrank E-learning</h2>
@@ -32,7 +35,7 @@ function Project(props) {
 
           <li className="project__item">
             <div className="project__item-image">
-              <img src="https://raw.githubusercontent.com/BlackValentine/image-storage/main/Screen%20Shot%202022-05-31%20at%2010.57.40.png?token=GHSAT0AAAAAABVNGYMVMF6VUBRTVK23AVG2YVCUY4A" alt="BlackValentine__image" />
+              <img src={blava} alt="BlackValentine__image" />
             </div>
             <div className="project__item-content">
               <h2 className="project__item-title">Black Valentine</h2>
@@ -55,7 +58,7 @@ function Project(props) {
 
           <li className="project__item">
             <div className="project__item-image">
-              <img src="https://raw.githubusercontent.com/BlackValentine/image-storage/main/Screen%20Shot%202022-06-01%20at%2014.31.15.png?token=GHSAT0AAAAAABVNGYMVH7JPCYZPKZN7P3BQYVCUZLQ" alt="CasePage__image" />
+              <img src={casepage} alt="CasePage__image" />
             </div>
             <div className="project__item-content">
               <h2 className="project__item-title">Case Page</h2>

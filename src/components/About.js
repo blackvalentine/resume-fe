@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.scss'
+import avatar from '../assets/images/avatar.jpeg'
 
 function About(props) {
   return (
@@ -54,7 +55,7 @@ function About(props) {
           <div className="about__left">
             <picture>
               <img
-                src="https://raw.githubusercontent.com/BlackValentine/image-storage/main/47351295_1869123853184966_2209675839597969408_n.jpeg?token=GHSAT0AAAAAABVNGYMVCTA452NGJBDN5SM4YVCUX6A"
+                src={avatar}
                 alt="avatar"
               />
             </picture>
