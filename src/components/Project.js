@@ -13,7 +13,7 @@ function Project(props) {
         <ul className="project__list">
           <li className="project__item">
             <div className="project__item-image">
-              <img src="https://scontent.fhan1-1.fna.fbcdn.net/v/t39.30808-6/284648826_4962703037160350_2954177047264486159_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=6Eb2vBp5iMsAX-fnKBI&_nc_ht=scontent.fhan1-1.fna&oh=00_AT815p1dG8KV8ymf993Bh5uVm0uD93CClLpT4F0xWSvprw&oe=629B8595" alt="Skillrank_image" />
+              <img src="https://raw.githubusercontent.com/BlackValentine/image-storage/main/Screen%20Shot%202022-06-01%20at%2017.23.57.png?token=GHSAT0AAAAAABVNGYMV2VEKK4INNC4M2JVEYVCUZZA" alt="Skillrank_image" />
             </div>
             <div className="project__item-content">
               <h2 className="project__item-title">Skillrank E-learning</h2>
@@ -32,7 +32,7 @@ function Project(props) {
 
           <li className="project__item">
             <div className="project__item-image">
-              <img src="https://scontent.fhan1-1.fna.fbcdn.net/v/t39.30808-6/283692117_4959161420847845_5266772402667076158_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=OGcs0LEr35kAX_A-EdG&_nc_ht=scontent.fhan1-1.fna&oh=00_AT9kwKPv1XYZ5Fvvxk14wmDo7B9eobIx9NsrYPsoq0waNw&oe=629AC132" alt="BlackValentine__image" />
+              <img src="https://raw.githubusercontent.com/BlackValentine/image-storage/main/Screen%20Shot%202022-05-31%20at%2010.57.40.png?token=GHSAT0AAAAAABVNGYMVMF6VUBRTVK23AVG2YVCUY4A" alt="BlackValentine__image" />
             </div>
             <div className="project__item-content">
               <h2 className="project__item-title">Black Valentine</h2>
@@ -55,7 +55,7 @@ function Project(props) {
 
           <li className="project__item">
             <div className="project__item-image">
-              <img src="https://scontent.fhan1-1.fna.fbcdn.net/v/t39.30808-6/285441958_4962362427194411_4690352916503702676_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=TVWy7XFxFboAX8vtOQW&_nc_ht=scontent.fhan1-1.fna&oh=00_AT9wfY81OeSK_cnYa08N3WkAPbXsoqq4eZkT-TGiEqyGgw&oe=629CDC40" alt="CasePage__image" />
+              <img src="https://raw.githubusercontent.com/BlackValentine/image-storage/main/Screen%20Shot%202022-06-01%20at%2014.31.15.png?token=GHSAT0AAAAAABVNGYMVH7JPCYZPKZN7P3BQYVCUZLQ" alt="CasePage__image" />
             </div>
             <div className="project__item-content">
               <h2 className="project__item-title">Case Page</h2>

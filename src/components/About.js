@@ -54,7 +54,7 @@ function About(props) {
           <div className="about__left">
             <picture>
               <img
-                src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/47351295_1869123853184966_2209675839597969408_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=2Ceu-TumMGwAX_ZGW_Q&_nc_ht=scontent.fhan2-3.fna&oh=00_AT_ExqIFQCPVXNu6x2-xfB5PbKra-lvtdWXzm76T0itmmQ&oe=62990908"
+                src="https://raw.githubusercontent.com/BlackValentine/image-storage/main/47351295_1869123853184966_2209675839597969408_n.jpeg?token=GHSAT0AAAAAABVNGYMVCTA452NGJBDN5SM4YVCUX6A"
                 alt="avatar"
               />
             </picture>
