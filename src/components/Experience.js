@@ -23,7 +23,7 @@ function Experience(props) {
               <div
                 className={activeNumber === 1 ? "experience__company active__company" : "experience__company"}
                 onClick={() => handleChooseActiveItem(1)}
-              ><span>CMC Global</span></div>
+              ><span>Maxflow Technology</span></div>
               <div
                 className={activeNumber === 2 ? "experience__company active__company" : "experience__company"}
                 onClick={() => handleChooseActiveItem(2)}
@@ -43,9 +43,9 @@ function Experience(props) {
                 <h3 className="experience__detail-position">
                   Software Engineer
                   <span>@</span>
-                  <a href="https://cmcglobal.com.vn/vi/home-vi/">CMC Global</a>
+                  <a href="https://maxflowtech.com/">Maxflow Technology</a>
                 </h3>
-                <p className="experience__detail-time">April 2022 - Present</p>
+                <p className="experience__detail-time">April 2021 - Present</p>
                 <p className="experience__detail-description">Write modern, performant, maintainable code for a diverse array of client and internal projects</p>
                 <p className="experience__detail-description">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</p>
                 <p className="experience__detail-description">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p>
@@ -56,7 +56,7 @@ function Experience(props) {
                   <span>@</span>
                   <a href="https://kpim.vn/">KPIM</a>
                 </h3>
-                <p className="experience__detail-time">July 2021 - April 2022</p>
+                <p className="experience__detail-time">May 2020 - April 2021</p>
                 <p className="experience__detail-description">Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern</p>
                 <p className="experience__detail-description">Helped solidify a brand direction for blistabloc that spans both packaging and web</p>
                 <p className="experience__detail-description">Interfaced with clients on a weekly basis, providing technological expertise</p>
@@ -67,7 +67,7 @@ function Experience(props) {
                   <span>@</span>
                   <a href="https://www.water-filter-vietnam.com/vi">BMS</a>
                 </h3>
-                <p className="experience__detail-time">June 2018 - 2021</p>
+                <p className="experience__detail-time">June 2018 - 2020</p>
                 <p className="experience__detail-description">Write modern, performant, maintainable code for a diverse array of client and internal projects</p>
                 <p className="experience__detail-description">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</p>
                 <p className="experience__detail-description">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p>

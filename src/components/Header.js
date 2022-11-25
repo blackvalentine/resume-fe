@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import logo from '../assets/images/logo.png'
 import './Header.scss'
 import { Link } from "react-router-dom"
 import userApi from '../api/userApi'
 import { useNavigate } from 'react-router-dom'
+import SvgAnimation from './SvgAnimation'
 
 function Header(props) {
 
@@ -58,7 +58,7 @@ function Header(props) {
             {toggleMenu ? <i className="fas fa-times nav__toggle-icon"></i> : <i className="fas fa-list nav__toggle-icon"></i>}
           </div>
           <Link to="/" className="nav__logo">
-            <img src={logo} alt="logo" className="nav__image" />
+            <SvgAnimation />
           </Link>
           {userName && <div className={userName ? "nav__account" : "nav__account visibility-hidden"}>Welcome, <span className="nav__account-name" onClick={handleLogout}>{userName}</span></div>}
         </div>

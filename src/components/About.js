@@ -3,6 +3,9 @@ import './About.scss'
 import avatar from '../assets/images/avatar.jpeg'
 
 function About(props) {
+
+  const technologyList = ["Javascripts (ES6+)", "ReactJs", "NodeJs", "NextJs", "TailwindCss", "Flutter"]
+
   return (
     <div className="section-component about" id="about">
       <div className="container about__container">
@@ -32,24 +35,13 @@ function About(props) {
             </p>
             <p>Here are a few technologies I've been working with recently:</p>
             <ul className="about__list">
-              <li className="about__item">
-                <span>Javascripts (ES6+)</span>
-              </li>
-              <li className="about__item">
-                <span>ReactJs</span>
-              </li>
-              <li className="about__item">
-                <span>NodeJs</span>
-              </li>
-              <li className="about__item">
-                <span>TypeScript</span>
-              </li>
-              <li className="about__item">
-                <span>NextJs</span>
-              </li>
-              <li className="about__item">
-                <span>TailwindCss</span>
-              </li>
+              {technologyList.map((item, index) => {
+                return (
+                  <li key={index} className="about__item">
+                    <span>{item}</span>
+                  </li>
+                )
+              })}
             </ul>
           </div>
           <div className="about__left">
