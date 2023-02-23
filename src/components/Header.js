@@ -89,12 +89,12 @@ function Header(props) {
                 <span>Contact</span>
               </a>
             </li>
-            <li className="nav__item" onClick={handleToggleMenu}>
+            {/* <li className="nav__item" onClick={handleToggleMenu}>
               <Link to="/blogs" className="nav__link">
                 <span>05.</span>
                 <span>Blog</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
           <div className="nav__resume">
             <Link to="/resume">
