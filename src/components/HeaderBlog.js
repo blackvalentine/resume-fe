@@ -14,15 +14,15 @@ function HeaderBlog(props) {
   const [navScroll, setNavScroll] = useState(false)
   const [toggleMenu, setToggleMenu] = useState(false)
 
-  useEffect(() => {
-    (
-      async () => {
-        const response = await userApi.getToken()
-        setUserName(response.data.userName)
-        sessionStorage.setItem('user', JSON.stringify(response.data))
-      }
-    )();
-  })
+  // useEffect(() => {
+  //   (
+  //     async () => {
+  //       const response = await userApi.getToken()
+  //       setUserName(response.data.userName)
+  //       sessionStorage.setItem('user', JSON.stringify(response.data))
+  //     }
+  //   )();
+  // })
 
   useEffect(() => {
     window.onscroll = () => {

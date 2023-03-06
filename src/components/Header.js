@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './Header.scss'
 import { Link } from "react-router-dom"
 import userApi from '../api/userApi'
@@ -6,23 +6,26 @@ import { useNavigate } from 'react-router-dom'
 import SvgAnimation from './SvgAnimation'
 
 function Header(props) {
-
   const navigate = useNavigate()
+  const { tl } = props;
+
+  let logo = useRef(null)
+  let menuItem = useRef(null)
+  let resumeBtn = useRef(null)
 
   const [userName, setUserName] = useState('')
-
   const [navScroll, setNavScroll] = useState(false)
   const [toggleMenu, setToggleMenu] = useState(false)
 
-  useEffect(() => {
-    (
-      async () => {
-        const response = await userApi.getToken()
-        setUserName(response.data.userName)
-        sessionStorage.setItem('user', JSON.stringify(response.data))
-      }
-    )();
-  })
+  // useEffect(() => {
+  //   (
+  //     async () => {
+  //       const response = await userApi.getToken()
+  //       setUserName(response.data.userName)
+  //       sessionStorage.setItem('user', JSON.stringify(response.data))
+  //     }
+  //   )();
+  // })
 
   useEffect(() => {
     window.onscroll = () => {
@@ -98,7 +101,9 @@ function Header(props) {
           </ul>
           <div className="nav__resume">
             <Link to="/resume">
-              <span>Resume</span>
+              <span>
+                Resume
+              </span>
             </Link>
           </div>
         </div>

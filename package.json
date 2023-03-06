@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "buffer": "^6.0.3",
+    "gsap": "^3.11.4",
     "lodash": "^4.17.21",
     "markdown-it": "^13.0.1",
     "moment": "^2.29.3",
@@ -47,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
   }
 }

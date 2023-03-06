@@ -5,7 +5,7 @@ import Home from './components/Home'
 // import Admin from './components/AdminComponent/Admin'
 // import BlogDetail from './components/BlogComponent/BlogDetail'
 import NotFound from './components/NotFound'
-import './App.css';
+import './App.scss';
 import { Routes, Route } from "react-router-dom"
 import Resume from './components/ResumeComponent/Resume'
 

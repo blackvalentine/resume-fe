@@ -11,7 +11,7 @@ function Audio(props) {
 
   return (
     <div>
-      <audio loop src={song} ref={audioSong}></audio>
+      <audio loop src={song} ref={audioSong} muted="muted"></audio>
     </div>
   );
 }

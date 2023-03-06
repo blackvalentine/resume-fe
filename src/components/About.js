@@ -4,7 +4,7 @@ import avatar from '../assets/images/avatar.jpeg'
 
 function About(props) {
 
-  const technologyList = ["Javascripts (ES6+)", "ReactJs", "NodeJs", "NextJs", "TailwindCss", "Flutter"]
+  const technologyList = ["Javascripts (ES6+)", "ReactJs", "NodeJs (NestJs)", "NextJs", "TailwindCss", "Flutter"]
 
   return (
     <div className="section-component about" id="about">

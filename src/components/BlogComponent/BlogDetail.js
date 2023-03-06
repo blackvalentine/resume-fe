@@ -12,13 +12,13 @@ function BlogDetail(props) {
   const [blogData, setBlogData] = useState({})
 
   const { id } = useParams();
-  useEffect(() => {
-    const fetchBlog = async () => {
-      const response = await blogApi.getBlog(id)
-      setBlogData(response.data.blogs)
-    }
-    fetchBlog()
-  }, [id])
+  // useEffect(() => {
+  //   const fetchBlog = async () => {
+  //     const response = await blogApi.getBlog(id)
+  //     setBlogData(response.data.blogs)
+  //   }
+  //   fetchBlog()
+  // }, [id])
 
   const bufferImage = (image) => {
     if(image) {

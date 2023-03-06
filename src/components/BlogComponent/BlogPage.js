@@ -15,13 +15,13 @@ function BlogPage(props) {
   const [valueFilter, setValueFilter] = useState('All')
   const [activeFilter, setActiveFilter] = useState(false)
 
-  useEffect(() => {
-    const fetchBlog = async () => {
-      const response = await blogApi.getBlog('all')
-      setBlogList(response.data.blogs)
-    }
-    fetchBlog()
-  }, [])
+  // useEffect(() => {
+  //   const fetchBlog = async () => {
+  //     const response = await blogApi.getBlog('all')
+  //     setBlogList(response.data.blogs)
+  //   }
+  //   fetchBlog()
+  // }, [])
 
   useEffect(() => {
     try {

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import './Intro.scss'
 
@@ -14,7 +13,13 @@ function Intro(props) {
             <p>I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at <a href="#123">Upstatement</a>.</p>
           </div>
           <Link to="/resume">
-            <button className="intro__button">Checkout my resume!</button>
+            <button className="intro__button button__animation">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Checkout my resume!
+            </button>
           </Link>
         </div>
 
