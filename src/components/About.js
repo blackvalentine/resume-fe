@@ -8,7 +8,7 @@ function About(props) {
 
   return (
     <div className="section-component about" id="about">
-      <div className="container about__container">
+      <div className="container__custom about__container">
         <div className="about__title title">
           <span className="title__number">01.</span>
           <span className="title__text">About Me</span>

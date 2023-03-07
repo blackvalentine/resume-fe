@@ -54,7 +54,7 @@ body {
   overflow: hidden;
 }
 
-.container {
+.container__custom {
   max-width: 976px;
   padding: 0 5rem;
   margin-left: auto;
@@ -192,7 +192,7 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
+  .container__custom {
     max-width: 100%;
     margin: 0 10rem;
     padding: 0;
@@ -200,7 +200,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .container__custom {
     max-width: 100%;
     margin: 0 3.6rem;
   }

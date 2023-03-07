@@ -30,7 +30,7 @@ function BlogDetail(props) {
   return (
     <div className="blog-detail">
       <HeaderBlog />
-      <div className="container blog-detail__container">
+      <div className="container__custom blog-detail__container">
         <div className="blog-detail__title">{blogData?.title}</div>
         <img 
           className="blog-detail__author-img"

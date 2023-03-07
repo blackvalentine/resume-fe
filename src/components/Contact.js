@@ -4,7 +4,7 @@ import './Contact.scss'
 function Contact(props) {
     return (
         <div className="section-component contact" id="contact">
-            <div className="container contact__container">
+            <div className="container__custom contact__container">
                 <div className="about__title title">
                     <span className="title__number">04.</span>
                     <span className="title__text">What's Next?</span>

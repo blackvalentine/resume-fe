@@ -7,7 +7,7 @@ import casepage from '../assets/images/case.png'
 function Project(props) {
   return (
     <div className="section project section-component" id="project">
-      <div className="container project__container">
+      <div className="container__custom project__container">
         <div className="project__title title">
           <span className="title__number">03.</span>
           <span className="title__text">My Project</span>

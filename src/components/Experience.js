@@ -11,7 +11,7 @@ function Experience(props) {
 
   return (
     <div className="section-component experience" id="experience">
-      <div className="container">
+      <div className="container__custom">
         <div className="experience__container">
           <div className="experience__title title">
             <span className="title__number">02.</span>

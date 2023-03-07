@@ -4,7 +4,7 @@ import './Intro.scss'
 function Intro(props) {
   return (
     <div className="intro" id="intro">
-      <div className="intro__container container">
+      <div className="intro__container container__custom">
         <div className="intro__wrapper">
           <p className="intro__small-heading">Hi, my name is</p>
           <h2 className="intro__big-heading">Black Valentine</h2>

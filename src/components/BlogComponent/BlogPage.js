@@ -59,7 +59,7 @@ function BlogPage(props) {
   return (
     <div className="blog-page">
       <HeaderBlog />
-      <div className="container container__blog-page">
+      <div className="container__custom container__blog-page">
         <div className="blog-page__intro">
           <h2 className="blog-page__intro-title">Great&nbsp;<span>website</span>&nbsp;is the language that I speak</h2>
           <div className="blog-page__intro-subtitle">We are a leading branding agency. We lead the creative strategies and development process for our clients. Our initial product and strategy workshops will deliver a much better understanding of your customer's needs. We help brands to feel social by default optimize for generations of consumers wanting to connect with people with brands.</div>
