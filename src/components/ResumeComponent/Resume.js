@@ -8,7 +8,7 @@ function Resume(props) {
   return (
     <div className="resume">
       <HeaderBlog />
-      <div className="container resume__container">
+      <div className="container__custom resume__container">
         <ResumeLeft />
         <ResumeRight />
       </div>
