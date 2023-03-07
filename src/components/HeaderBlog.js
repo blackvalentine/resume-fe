@@ -71,11 +71,6 @@ function HeaderBlog(props) {
               </Link>
             </li>
           </ul>
-          <div className="nav__resume">
-            <Link to="/resume">
-              <span>Resume</span>
-            </Link>
-          </div>
         </div>
       </nav>
     </div>
