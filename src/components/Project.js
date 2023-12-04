@@ -21,7 +21,10 @@ function Project(props) {
             <div className="project__item-content">
               <h2 className="project__item-title">Skillrank E-learning</h2>
               <div className="project__item-detail">
-                <div className="project__item-detail-text">A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</div>
+                <p className="project__item-detail-text">
+                  Skillrank is e-learning game system that helps teachers and students to interact with each other by answering questions.<br />
+                  Function description: Waiting Room, Answer Questions Screen (single choice, multiple choice, ordering, true/false, matching ...). After each question, showing scoreboard of all player.
+                </p>
               </div>
               <ul className="project__item-tech-list">
                 <li className="project__item-tech-item">NextJs</li>
@@ -40,16 +43,14 @@ function Project(props) {
             <div className="project__item-content">
               <h2 className="project__item-title">Black Valentine</h2>
               <div className="project__item-detail">
-                <div className="project__item-detail-text">A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</div>
+                <p className="project__item-detail-text">This is my secret world. It has some pretty UI, animation to tell you who I am and what I can do. You can see my Resume, my Exprience and some projects that I made on my way to become a developer :) Enjoy it, I'm Black Valentine.</p>
               </div>
               <ul className="project__item-tech-list">
                 <li className="project__item-tech-item">ReactJs</li>
-                <li className="project__item-tech-item">Scss</li>
-                <li className="project__item-tech-item">NodeJs</li>
-                <li className="project__item-tech-item">Github</li>
+                <li className="project__item-tech-item">SCSS</li>
               </ul>
               <div className="project__item-link">
-                <a href="#123" className="project__item-link-item">
+                <a href="/" className="project__item-link-item">
                   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
               </div>
@@ -63,13 +64,12 @@ function Project(props) {
             <div className="project__item-content">
               <h2 className="project__item-title">Case Page</h2>
               <div className="project__item-detail">
-                <div className="project__item-detail-text">A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</div>
+                <p className="project__item-detail-text">A small landing page UI to introduce a headphones product. This application build on HTML5, CSS3 and vanilla Javascript for pretty animation.</p>
               </div>
               <ul className="project__item-tech-list">
                 <li className="project__item-tech-item">HTML5</li>
                 <li className="project__item-tech-item">CSS3</li>
                 <li className="project__item-tech-item">Javascript</li>
-                <li className="project__item-tech-item">Github</li>
               </ul>
               <div className="project__item-link">
                 <a href="https://github.com/BlackValentine/CasePage" target="_blank" rel="noreferrer" className="project__item-link-item">

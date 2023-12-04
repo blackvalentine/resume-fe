@@ -3,7 +3,7 @@ import React from 'react';
 function ResumeProjectItem(props) {
   return (
     <div className="mb-10">
-      <h3 className="text-light-cyan !text-2xl">{props.projectName}</h3>
+      <h3 className="text-light-cyan !text-2xl underline font-bold">{props.projectName}</h3>
       <p className="text-royal-blue mb-2">{props.projectTime}</p>
       <table className="text-lg">
         <thead>

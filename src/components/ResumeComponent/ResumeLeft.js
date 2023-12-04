@@ -14,6 +14,8 @@ function ResumeLeft(props) {
       <div className="mt-2 mb-10">
         <h3 className="text-xl text-dark-eclipse font-extrabold">Hanoi University of Science and Technology</h3>
         <p className="italic text-pastel-red text-lg">(09/2013 - 06/2018)</p>
+        <h3 className="text-xl text-dark-eclipse font-extrabold">Devops course - Techmaster</h3>
+        <p className="italic text-pastel-red text-lg">(07/2023 - 12/2023)</p>
         <ul className="mt-5">
           <li className="mb-1 text-xl">
             <span className="text-dark-eclipse font-bold">Speciality: </span>
@@ -34,7 +36,8 @@ function ResumeLeft(props) {
         <hr />
       </div>
       <p className="resume-left__profile">
-        Hi, my name is Stephen, I have 3 years experience that working as FrontEnd Developer. Actually, my path to become a developer is not begin when I study in my university. After I graduated, I have about 3 years working as Process Engineer. And one day, I realized that this job is not suitable for myself, and I decided that I need to change to new job, which should be make me happy everyday. And the new chapter of my life start like this :)
+        Hi, my name is Stephen. Until now, I have 4 years of experience as a frontend developer and 2 year as a backend developer. I am familiar with using Javascript (Typescript) for both frontend and backend, as well as ReactJs, NextJs, and NodeJs, NestJs frameworks.<br />
+        I majored in math in High School and have 7 years of experience as a teacher. Therefore, my logical thinking is quite good. I also have research and self-learning skills, as well as other skills acquired during my time working.
       </p>
 
       <div className="resume-left__title">

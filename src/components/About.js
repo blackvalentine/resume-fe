@@ -3,8 +3,7 @@ import './About.scss'
 import avatar from '../assets/images/avatar.jpeg'
 
 function About(props) {
-
-  const technologyList = ["Javascripts (ES6+)", "ReactJs", "NodeJs (NestJs)", "NextJs", "TailwindCss", "Flutter"]
+  const technologyList = ["Javascripts (ES6+)", "Typescript", "ReactJs", "NextJs", "NodeJs", "NestJs", "Docker", "Kubernetes", "TailwindCss, Antd, MUI, SCSS"]
 
   return (
     <div className="section-component about" id="about">
@@ -18,20 +17,13 @@ function About(props) {
             <p>
               Hello! My name is Black Valentine and I enjoy creating things that
               live on the internet. My interest in web development started back
-              in 2012 when I decided to try editing custom Tumble themes - turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
+              in 2020 when I had 2 years working as a Physics Engineering and one day,
+              I realized that I'm not suitable for this work. I had a big decision of my life, to be come a developer
             </p>
             <p>
-              Fast-forward to today, and I've had the privilege of working at an
-              advertising agency, a start-up, a huge corporation, and a
-              student-led design studio. My main focus these days is building
-              accessible, inclusive products and digital expreriences at
-              Upstatement for a variety of clients.
-            </p>
-            <p>
-              I also recently launched a course that covers everything you need
-              to build a web app with the Spotify API using Node & React.
+              Fast-forward to today, and I've had the privilege of working at many company.
+              Each of them help me a lot to improve my knowleage and give me many chance for working with difference domain like: shipping, e-learning, CMS, Investment...
+              Currently, I'm working at FrontFundr. We provide startups and growth companies with access to capital that helps them grow, to help Canadian entrepreneurs turn their groundbreaking ideas into reality.
             </p>
             <p>Here are a few technologies I've been working with recently:</p>
             <ul className="about__list">

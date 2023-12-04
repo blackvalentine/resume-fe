@@ -2,8 +2,56 @@ import React, { useState } from 'react';
 import './Experience.scss'
 
 function Experience(props) {
-
   const [activeNumber, setActiveNumber] = useState(1)
+
+  const experiences = [
+    {
+      company: 'FrontFundr',
+      position: 'Software Engineer',
+      website: 'https://www.frontfundr.com/',
+      time: 'Nov 2023 - Present',
+      descriptions: [
+        'FrontFundr is Canada’s leading online private markets investing platform and an exempt market dealer',
+        'We provide startups and growth companies with access to capital that helps them grow, to help Canadian entrepreneurs turn their groundbreaking ideas into reality',
+        'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis',
+        'Work with NodeJs, NextJs and Docker'
+      ]
+    },
+    {
+      company: 'Eastgate Software',
+      position: 'Software Engineer',
+      website: 'https://eastgate-software.com/',
+      time: 'Feb 2023 - Nov 2023',
+      descriptions: [
+        'Write modern, performant, maintainable code for a diverse array of client and internal projects.',
+        'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, ReactJs, NodeJs, NestJs.',
+        'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis.'
+      ]
+    },
+    {
+      company: 'Maxflow Technology',
+      position: 'Frontend Developer',
+      website: 'https://maxflowtech.com/',
+      time: 'Feb 2022 - Feb 2023',
+      descriptions: [
+        'Simulate the shipping process from the Manufacturer to the Delivery Hub and provide for Dealers around the world. Users can check the location of their container product at any time after shipping and when it arrives at its destination.',
+        'Create tables and charts to show the information for a range of time. This will help suppliers easily keep track of their shipping for the week, month, or year',
+        "I'm the main Front End developer for this project.My responsibility is to receive feedback from the PM and customers, and to combine it with the Back End to develop new features."
+      ]
+    },
+    {
+      company: 'KPIM Joint Stock',
+      position: 'Frontend Developer',
+      website: 'https://kpim.vn/',
+      time: 'Jan 2020 - Jan 2022',
+      descriptions: [
+        'Skillrank is e-learning game system that helps teachers and students to interact with each other by answering questions',
+        'Function description: Waiting Room, Answer Questions Screen (single choice, multiple choice, ordering, true/false, matching ...). After each question, showing scoreboard of all player.',
+        'Work with Nextjs and TailwindCss',
+        'Combine with Backend team to make suitable API and Designer to make a creative UI. '
+      ]
+    }
+  ]
 
   const handleChooseActiveItem = (number) => {
     setActiveNumber(number)
@@ -20,69 +68,34 @@ function Experience(props) {
 
           <div className="experience__content">
             <div className="experience__left">
-              <div
-                className={activeNumber === 1 ? "experience__company active__company" : "experience__company"}
-                onClick={() => handleChooseActiveItem(1)}
-              ><span>Maxflow Technology</span></div>
-              <div
-                className={activeNumber === 2 ? "experience__company active__company" : "experience__company"}
-                onClick={() => handleChooseActiveItem(2)}
-              >KPIM</div>
-              <div
-                className={activeNumber === 3 ? "experience__company active__company" : "experience__company"}
-                onClick={() => handleChooseActiveItem(3)}
-              >BMS</div>
-              <div
-                className={activeNumber === 4 ? "experience__company active__company" : "experience__company"}
-                onClick={() => handleChooseActiveItem(4)}
-              >HUST Lab</div>
+              {experiences.map((exprience, index) => {
+                return (
+                  <div
+                    className={activeNumber === index + 1 ? "experience__company active__company" : "experience__company"}
+                    onClick={() => handleChooseActiveItem(index + 1)}
+                  ><span>{exprience.company}</span></div>
+                )
+              })}
             </div>
 
             <div className="experience__right">
-              <div className={activeNumber === 1 ? "experience__detail active__detail" : "experience__detail"}>
-                <h3 className="experience__detail-position">
-                  Software Engineer
-                  <span>@</span>
-                  <a href="https://maxflowtech.com/">Maxflow Technology</a>
-                </h3>
-                <p className="experience__detail-time">April 2021 - Present</p>
-                <p className="experience__detail-description">Write modern, performant, maintainable code for a diverse array of client and internal projects</p>
-                <p className="experience__detail-description">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</p>
-                <p className="experience__detail-description">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p>
-              </div>
-              <div className={activeNumber === 2 ? "experience__detail active__detail" : "experience__detail"}>
-                <h3 className="experience__detail-position">
-                  Software Engineer
-                  <span>@</span>
-                  <a href="https://kpim.vn/">KPIM</a>
-                </h3>
-                <p className="experience__detail-time">May 2020 - April 2021</p>
-                <p className="experience__detail-description">Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern</p>
-                <p className="experience__detail-description">Helped solidify a brand direction for blistabloc that spans both packaging and web</p>
-                <p className="experience__detail-description">Interfaced with clients on a weekly basis, providing technological expertise</p>
-              </div>
-              <div className={activeNumber === 3 ? "experience__detail active__detail" : "experience__detail"}>
-                <h3 className="experience__detail-position">
-                  Process Engineer
-                  <span>@</span>
-                  <a href="https://www.water-filter-vietnam.com/vi">BMS</a>
-                </h3>
-                <p className="experience__detail-time">June 2018 - 2020</p>
-                <p className="experience__detail-description">Write modern, performant, maintainable code for a diverse array of client and internal projects</p>
-                <p className="experience__detail-description">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</p>
-                <p className="experience__detail-description">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p>
-              </div>
-              <div className={activeNumber === 4 ? "experience__detail active__detail" : "experience__detail"}>
-                <h3 className="experience__detail-position">
-                  Intern Research Enginner
-                  <span>@</span>
-                  <a href="https://www.hust.edu.vn/">HUST Laboratory</a>
-                </h3>
-                <p className="experience__detail-time">May 2014 - June 2018</p>
-                <p className="experience__detail-description">Write modern, performant, maintainable code for a diverse array of client and internal projects</p>
-                <p className="experience__detail-description">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</p>
-                <p className="experience__detail-description">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p>
-              </div>
+              {experiences.map((exprience, index) => {
+                return (
+                  <div key={index} className={activeNumber === index + 1 ? "experience__detail active__detail" : "experience__detail"}>
+                    <h3 className="experience__detail-position">
+                      {exprience.position}
+                      <span>@</span>
+                      <a href={exprience.website} target="_blank" rel="noreferrer">{exprience.company}</a>
+                    </h3>
+                    <p className="experience__detail-time">{exprience.time}</p>
+                    {exprience.descriptions.map((description, index1) => {
+                      return (
+                        <p key={index1} className="experience__detail-description">{description}</p>
+                      )
+                    })}
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
