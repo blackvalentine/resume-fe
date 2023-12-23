@@ -9,6 +9,10 @@
   .experience__content {
     display: flex;
 
+    @include mixin.tablet {
+      flex-direction: column;
+    }
+
     .experience__left {
       .experience__company {
         padding: 1rem 2rem;
@@ -20,6 +24,10 @@
 
         @include mixin.tablet {
           width: 100px;
+        }
+
+        @include mixin.mobile {
+          width: 100%;
         }
 
         &.active__company {
@@ -36,6 +44,10 @@
 
     .experience__right {
       margin-left: 2rem;
+
+      @include mixin.mobile {
+        margin: 2rem 0 0;
+      }
 
       .experience__detail {
         display: none;
