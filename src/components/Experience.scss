@@ -26,7 +26,7 @@
           width: 100px;
         }
 
-        @include mixin.mobile {
+        @include mixin.sm-mobile {
           width: 100%;
         }
 
@@ -45,7 +45,7 @@
     .experience__right {
       margin-left: 2rem;
 
-      @include mixin.mobile {
+      @include mixin.sm-mobile {
         margin: 2rem 0 0;
       }
 
