@@ -9,11 +9,16 @@
   .experience__content {
     display: flex;
 
-    @include mixin.tablet {
+    @include mixin.mobile {
       flex-direction: column;
     }
 
     .experience__left {
+      @include mixin.mobile {
+        display: flex;
+        margin-bottom: 3rem;
+      }
+
       .experience__company {
         padding: 1rem 2rem;
         color: v.$text-color-dark;
@@ -21,6 +26,21 @@
         font-size: 1.4rem;
         border-left: 1px solid v.$text-color-dark;
         width: 200px;
+
+        span {
+          @include mixin.mobile {
+            margin: auto;
+            text-align: center;
+          }
+        }
+
+        @include mixin.mobile {
+          border-left: 0;
+          border-bottom: 1px solid v.$text-color-dark;
+          font-size: 1.2rem;
+          padding: 0 0 1rem;
+          display: flex;
+        }
 
         @include mixin.tablet {
           width: 100px;
@@ -33,6 +53,11 @@
         &.active__company {
           color: v.$green-color;
           border-left: 1px solid v.$green-color;
+
+          @include mixin.mobile {
+            border-left: 0;
+            border-bottom: 1px solid v.$green-color;
+          }
         }
 
         &:hover {

@@ -40,7 +40,7 @@ function Experience(props) {
       ]
     },
     {
-      company: 'KPIM Joint Stock',
+      company: 'KPIM',
       position: 'Frontend Developer',
       website: 'https://kpim.vn/',
       time: 'Jan 2020 - Jan 2022',

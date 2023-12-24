@@ -22,3 +22,9 @@ $desktop-width: 1024px;
     @content;
   }
 }
+
+@mixin sm-mobile {
+  @media (max-width: #{$sm-mobile-width}) {
+    @content;
+  }
+}
