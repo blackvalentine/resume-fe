@@ -21,7 +21,7 @@ function Experience(props) {
       company: 'Eastgate Software',
       position: 'Software Engineer',
       website: 'https://eastgate-software.com/',
-      time: 'Feb 2023 - Nov 2023',
+      time: 'Feb 2023 - Feb 2024',
       descriptions: [
         'Write modern, performant, maintainable code for a diverse array of client and internal projects.',
         'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, ReactJs, NodeJs, NestJs.',
@@ -32,23 +32,11 @@ function Experience(props) {
       company: 'Maxflow Technology',
       position: 'Frontend Developer',
       website: 'https://maxflowtech.com/',
-      time: 'Feb 2022 - Feb 2023',
+      time: 'Nov 2020 - Feb 2023',
       descriptions: [
         'Simulate the shipping process from the Manufacturer to the Delivery Hub and provide for Dealers around the world. Users can check the location of their container product at any time after shipping and when it arrives at its destination.',
         'Create tables and charts to show the information for a range of time. This will help suppliers easily keep track of their shipping for the week, month, or year',
         "I'm the main Front End developer for this project.My responsibility is to receive feedback from the PM and customers, and to combine it with the Back End to develop new features."
-      ]
-    },
-    {
-      company: 'KPIM',
-      position: 'Frontend Developer',
-      website: 'https://kpim.vn/',
-      time: 'Jan 2020 - Jan 2022',
-      descriptions: [
-        'Skillrank is e-learning game system that helps teachers and students to interact with each other by answering questions',
-        'Function description: Waiting Room, Answer Questions Screen (single choice, multiple choice, ordering, true/false, matching ...). After each question, showing scoreboard of all player.',
-        'Work with Nextjs and TailwindCss',
-        'Combine with Backend team to make suitable API and Designer to make a creative UI. '
       ]
     }
   ]
